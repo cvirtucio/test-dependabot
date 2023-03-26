@@ -11,9 +11,11 @@ updates:
   # Configuration for Dockerfile
   - package-ecosystem: "docker"
     directory: "/"
+    registries:
+      - zendesk-ecr-images
     schedule:
       interval: 'daily'
-      time: '21:10'
+      time: '21:17'
 
     ignore:
       - dependency-name: "base/zendesk/docker-images-base/ruby:3.1.2"
