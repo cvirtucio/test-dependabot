@@ -1,0 +1,10 @@
+version: 2
+updates:
+  # Configuration for Dockerfile
+  - package-ecosystem: "docker"
+    directory: "/"
+
+    ignore:
+      - dependency-name: "golang:1.20.1-alpine"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+
