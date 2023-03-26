@@ -5,6 +5,7 @@ updates:
     directory: "/"
     schedule:
       interval: 'daily'
+      time: '08:31'
 
     ignore:
       - dependency-name: "golang:1.20.1-alpine"
