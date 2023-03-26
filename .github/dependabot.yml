@@ -15,7 +15,7 @@ updates:
       - zendesk-ecr-images
     schedule:
       interval: 'daily'
-      time: '21:17'
+      time: '21:40'
 
     ignore:
       - dependency-name: "base/zendesk/docker-images-base/ruby:3.1.2"
