@@ -15,9 +15,10 @@ updates:
       - zendesk-ecr-images
     schedule:
       interval: 'daily'
-      time: '13:41'
+      time: '15:09'
 
     ignore:
-      - dependency-name: "base/zendesk/docker-images-base/ruby:3.1.2"
+      #- dependency-name: "base/zendesk/docker-images-base/ruby:3.1.2"
+      - dependency-name: 'golang:1.19.6-alpine'
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
 
