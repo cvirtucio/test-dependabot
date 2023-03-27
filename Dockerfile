@@ -1,4 +1,4 @@
-FROM ruby:3.1.0-slim-buster
+FROM ruby:3.1.3-slim-buster
 
 USER 0
 
