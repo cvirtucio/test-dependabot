@@ -1,21 +1,21 @@
 version: 2
 
-registries:
-  zendesk-ecr-images:
-    type: docker-registry
-    url: '713408432298.dkr.ecr.us-west-2.amazonaws.com'
-    username: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #registries:
+  #  zendesk-ecr-images:
+  #    type: docker-registry
+  #    url: '713408432298.dkr.ecr.us-west-2.amazonaws.com'
+  #    username: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #    password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 updates:
   # Configuration for Dockerfile
   - package-ecosystem: "docker"
     directory: "/"
-    registries:
-      - zendesk-ecr-images
+      #    registries:
+      #      - zendesk-ecr-images
     schedule:
       interval: 'daily'
-      time: '15:09'
+      time: '15:40'
 
     ignore:
       #- dependency-name: "base/zendesk/docker-images-base/ruby:3.1.2"
