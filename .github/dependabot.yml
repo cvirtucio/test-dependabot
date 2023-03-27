@@ -1,24 +1,13 @@
 version: 2
 
-  #registries:
-  #  zendesk-ecr-images:
-  #    type: docker-registry
-  #    url: '713408432298.dkr.ecr.us-west-2.amazonaws.com'
-  #    username: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  #    password: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-
 updates:
   # Configuration for Dockerfile
   - package-ecosystem: "docker"
     directory: "/"
-      #    registries:
-      #      - zendesk-ecr-images
     schedule:
       interval: 'daily'
-      time: '17:56'
 
     ignore:
-      #- dependency-name: "base/zendesk/docker-images-base/ruby:3.1.2"
       - dependency-name: 'ruby:3.1.0-slim-buster'
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
 
