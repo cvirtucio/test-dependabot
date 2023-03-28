@@ -9,6 +9,6 @@ updates:
       time: '19:26'
 
     ignore:
-      - dependency-name: '*'
+      - dependency-name: 'ruby'
         update-types: ["version-update:semver-major", "version-update:semver-minor"]
 
